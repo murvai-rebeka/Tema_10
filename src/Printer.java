@@ -1,0 +1,19 @@
+public class Printer {
+    public static void printMyName() {
+        System.out.println("Hello Rebeka!");
+    }
+    public static void printJava(){
+        System.out.println("    J    a   v     v    a  ");
+        System.out.println("    J   a a   v   v    a a");
+        System.out.println("J   J  aaaaa   V V    aaaaa");
+        System.out.println(" JJ   a     a   V    a     a");
+    }
+    public static void  printFace(){
+        System.out.println();
+        System.out.println(" +\"\"\"\"\"+");
+        System.out.println("[| o o |]");
+        System.out.println(" |  ^  |");
+        System.out.println(" | '_' |");
+        System.out.println(" +_____+");
+    }
+}
