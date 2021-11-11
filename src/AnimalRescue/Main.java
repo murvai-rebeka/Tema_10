@@ -3,26 +3,53 @@ package AnimalRescue;
 public class Main {
     public static void main(String args[]) {
         Animal animal = new Animal();
-        System.out.println("Animal name is: " + animal.name + ", age: " + animal.age
-                + ", weight: " + animal.weight + ", breed: " + animal.breed + ", height: " + animal.heightInCm
-                + ", color: " + animal.color + ", healt: " + animal.healthStatus + ", hunger: "
-                + animal.hungerLevel + ", spirit: " + animal.spiritLevel + ", favFood: " + animal.favFood
-                + ", activities: " + animal.favActivities);
+        animal.setBread("ghh");
+        animal.setAge((byte) 2);
+        animal.setWeight(9.0F);
+        animal.setHeightInCm(50);
+        animal.setName("Goldy");
+        animal.setColor("Brown");
+        animal.setHealthStatus((byte) 8);
+        animal.setHungerLevel((byte) 6);
+        animal.setSpiritLevel((byte) 9);
+        animal.setFavFood("Royalcanin");
+        animal.setFavActivities("running");
+
+
+        System.out.println("Animal name is: " + animal.getName() + ", age: " + animal.getAge()
+                + ", weight: " + animal.getWeight() + ", breed: " + animal.getBreed() + ", height: " + animal.getHeightInCm()
+                + ", color: " + animal.getColor() + ", healt: " + animal.getHealthStatus() + ", hunger: "
+                + animal.getHungerLevel() + ", spirit: " + animal.getSpiritLevel() + ", favFood: " + animal.getFavFood()
+                + ", activities: " + animal.getFavActivities());
 
         Adopter adopter = new Adopter();
-        System.out.println("Adopter name is: " + adopter.name + ", has money: " + adopter.money + " ron");
+        adopter.setName("Rebeka");
+        adopter.setMoney(50);
+        System.out.println("Adopter name is: " + adopter.getName() + ", has money: " + adopter.getMoney() + " ron");
 
         AnimalFood animalFood = new AnimalFood();
-        System.out.println("The dog food name is: " + animalFood.dogFood + ", The price is: "
-                + animalFood.price + ", quantity is: " + animalFood.quantity + ", Stock: "
-                + animalFood.availabilityInStock);
+        animalFood.setDogFood("RoyalCanin");
+        animalFood.setPrice(50);
+        animalFood.setQuantity(10);
+        animalFood.setAvailabilityInStock("available");
+
+        System.out.println("The dog food name is: " + animalFood.getDogFood() + ", The price is: "
+                + animalFood.getPrice() + ", quantity is: " + animalFood.getQuantity() + ", Stock: "
+                + animalFood.getAvailabilityInStock());
 
         RecreationActivity activity = new RecreationActivity();
-        System.out.println("Favourite activity is: " + activity.activitie);
+        activity.setActivity("Sleeping");
+
+
+        System.out.println("Favourite activity is: " + activity.getActivity());
+
 
         Veterinary veterinary = new Veterinary();
-        System.out.println("The doctor name is: " + veterinary.nameOfDoctor + ", Specialization: "
-                + veterinary.specialization);
+        veterinary.setNameOfDoctor("Paul");
+        veterinary.setSpecialization("Vet Doctor");
+
+        System.out.println("The doctor name is: " + veterinary.getNameOfDoctor() + ", Specialization: "
+                + veterinary.getSpecialization());
 
 
     }
