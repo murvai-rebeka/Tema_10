@@ -188,5 +188,151 @@ public class LogicalOp {
         }
     }
 
+    public void whileEx1(int number) {
+        if (number > 100) {
+            System.out.println("The number is bigger than 100");
+        } else {
+            int i = number;
+            while (i <= 100) {
+                System.out.println(i);
+                i++;
+            }
+        }
+    }
+
+    public void whileEx2(int number) {
+        if (number < -100) {
+            System.out.println("The number is less than 100");
+        } else {
+            int i = number;
+            while (i >= -100) {
+                System.out.println(i);
+                i--;
+            }
+        }
+    }
+
+    public void whileEx3(int x, int y) {
+        int i = x;
+        while (i <= y) {
+            System.out.println(i);
+            i++;
+        }
+    }
+
+    public void whileEx4(int x, int y) {
+        if (x > y) {
+            whileEx4(y, x);
+
+        } else {
+            whileEx3(x, y);
+        }
+    }
+
+    public void whileEx5() {
+        int i = 1;
+        while (i <= 100) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+
+            }
+            i++;
+        }
+    }
+
+    public void whileEx6() {
+        int i = 1;
+        while (i <= 100) {
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
+            i++;
+        }
+    }
+
+    public void whileEx7() {
+        int i = 111;
+        int count = 0;
+        while (i <= 8899) {
+            count = count + i;
+            i++;
+        }
+        System.out.println(count);
+        double avg = count / 8788.0;
+        System.out.println(avg);
+
+    }
+
+    public double whileEx8(int x, int y) {
+        int i = x;
+        int count = 0;
+        double counter = 0.0;
+        while (i <= y) {
+            if (i % 7 == 0) {
+                count = count + i;
+                counter++;
+            }
+            i++;
+        }
+        double avg = count / counter;
+        return avg;
+    }
+
+    public void whileEx9() {
+        int i = 1;
+        int f0 = 0;
+        int f1 = 1;
+        while (i <= 20) {
+            System.out.print(f0 + " ");
+            int count = f0 + f1;
+
+            f0 = f1;
+            f1 = count;
+            i++;
+        }
+
+    }
+
+    public void CozaLozaWoza() {
+        int i = 1;
+        String val = "";
+        while (i <= 100) {
+            val = "";
+            if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+                val = "CozaLozaWoza";
+                i++;
+                continue;
+            }
+            if (i % 3 == 0 && i % 5 == 0) {
+                val = "CozaLoza";
+                i++;
+                continue;
+            }
+            if (i % 3 == 0 && i % 7 == 0) {
+                val = "CozaWoza";
+                i++;
+                continue;
+            }
+            if (i % 5 == 0 && i % 7 == 0) {
+                val = "WozaLoza";
+                i++;
+                continue;
+            }
+            if (i % 3 == 0)
+                val = "Coza";
+            if (i % 5 == 0)
+                val = "Loza";
+            if (i % 7 == 0)
+                val = "Woza";
+            if (val != "")
+                System.out.print(val);
+            else
+                System.out.print(i);
+            System.out.print(" ");
+            i++;
+        }
+
+    }
+
 
 }

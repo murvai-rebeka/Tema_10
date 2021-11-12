@@ -17,6 +17,22 @@ public class Tema_12 {
         System.out.println(op.loopEx8(10));
         op.loopEx9(7);
 
+        op.whileEx1(2);
+
+        op.whileEx2(10);
+
+        op.whileEx3(10, 30);
+
+        op.whileEx4(40, 20);
+
+        op.whileEx5();
+        op.whileEx6();
+        op.whileEx7();
+        System.out.println(op.whileEx8(1, 15));
+        op.whileEx9();
+        System.out.println();
+        op.CozaLozaWoza();
+
     }
 
 
