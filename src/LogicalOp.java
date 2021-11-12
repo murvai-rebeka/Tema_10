@@ -108,4 +108,85 @@ public class LogicalOp {
 
     }
 
+    public void loopEx1(int number) {
+        if (number > 100) {
+            System.out.println("The number is bigger than 100");
+        } else {
+            for (int i = number; i <= 100; i++) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public void loopEx2(int number) {
+        if (number < -100) {
+            System.out.println("The number is less than 100");
+        } else {
+            for (int i = number; i >= -100; i--) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public void loopEx3(int x, int y) {
+        for (int i = x; i <= y; i++) {
+            System.out.println(i);
+        }
+    }
+
+    public void loopEx4(int x, int y) {
+        if (x > y) {
+            loopEx3(y, x);
+
+        } else {
+            loopEx3(x, y);
+        }
+    }
+
+    public void loopEx5() {
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public void loopEx6() {
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 != 0) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public int loopEx7(int x) {
+        int sum = 0;
+        for (int i = x; i <= 100; i++) {
+            sum = sum + i;
+        }
+        return sum;
+
+    }
+
+    public double loopEx8(int x) {
+        int sum = 0;
+        double counter = 0.0;
+        for (int i = x; i <= 100; i++) {
+            sum = sum + i;
+            counter++;
+        }
+        double result = sum / counter;
+        return result;
+    }
+
+    public void loopEx9(int number) {
+        for (int i = number; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+
 }
