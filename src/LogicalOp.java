@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class LogicalOp {
     public int checkBiggerNumber(int first, int second) {
         if (first > second) {
@@ -334,5 +336,102 @@ public class LogicalOp {
 
     }
 
+    public void arrayEx2() {
+        int[] myArr = new int[100];
+        for (int i = 0; i < 100; i++) {
+            myArr[i] = i + 1;
+            System.out.println(myArr[i]);
+
+        }
+    }
+
+    public int[] arrayEx3(int[] array) {
+        int index = 0;
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                array[index] = i;
+                index++;
+            }
+        }
+        return array;
+    }
+
+    public void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+
+    public void printArray(String[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+
+    public double arrayEx4(int[] array) {
+        int counter = 0;
+        for (int i = 0; i < array.length; i++) {
+            counter = counter + array[i];
+
+        }
+        return counter / (double) array.length;
+    }
+
+    public boolean arrayEx5(String[] array, String search) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].equals(search)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int arrayEx6(int[] array, int search) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == search) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public void arrayEx7() {
+        int n = 10;
+        String[] array = new String[10];
+        for (int i = 0; i < n; i++) {
+            array[i] = "- - - - - - - - - - ";
+        }
+        printArray(array);
+    }
+
+    public int[] arrayEx8(int[] array, int search) {
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == search) {
+                count++;
+            }
+        }
+        int[] copyArray = new int[array.length - count];
+        int j = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == search) {
+                continue;
+            } else {
+                copyArray[j] = array[i];
+                j++;
+            }
+        }
+        return copyArray;
+    }
+    public int arrayEx9(int[] array){
+        Arrays.sort(array);
+        return array[1];
+    }
+    public int[] arrayEx10(int[] array, int[] empty){
+        for(int i = 0; i < array.length; i++ ){
+            empty[i] = array[i];
+        }
+        return empty;
+    }
 
 }
