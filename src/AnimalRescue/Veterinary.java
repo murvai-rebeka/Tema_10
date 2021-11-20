@@ -1,15 +1,10 @@
 package AnimalRescue;
 
-public class Veterinary {
-    private String nameOfDoctor = "Dr. Paul";
+public class Veterinary extends Person{
+
     private String specialization = "Vet Doctor";
 
-    public String getNameOfDoctor(){
-        return nameOfDoctor;
-    }
-    public void setNameOfDoctor(String nameOfDoctor){
-        this.nameOfDoctor = nameOfDoctor;
-    }
+
     public String getSpecialization(){
         return specialization;
     }

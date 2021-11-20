@@ -1,15 +1,9 @@
 package AnimalRescue;
 
-public class Adopter {
-    private String name = "Rebeka.M";
-    private int money = 1000;
+public class Adopter extends Person{
 
-    public String getName(){
-        return name;
-    }
-    public void setName(String name){
-        this.name = name;
-    }
+    private int money;
+
     public int getMoney(){
         return money;
     }

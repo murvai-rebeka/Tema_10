@@ -45,11 +45,23 @@ public class Main {
 
 
         Veterinary veterinary = new Veterinary();
-        veterinary.setNameOfDoctor("Paul");
+        veterinary.setName("Paul");
         veterinary.setSpecialization("Vet Doctor");
 
-        System.out.println("The doctor name is: " + veterinary.getNameOfDoctor() + ", Specialization: "
+        System.out.println("The doctor name is: " + veterinary.getName() + ", Specialization: "
                 + veterinary.getSpecialization());
+        Cat cat = new Cat();
+        cat.setName("Macy");
+        cat.meow();
+        cat.huntingMouse();
+        cat.purrs();
+
+        Dog dog = new Dog();
+        dog.setName("Jackie");
+        dog.bark();
+
+        Person person = new Person();
+        person.setName("Rebeka");
 
 
     }
