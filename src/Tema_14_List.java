@@ -53,6 +53,32 @@ public class Tema_14_List {
         list8.add(9);
         list8.add(10);
         System.out.println(op.Ex8(list8));
+
+        List<Integer> list9 = new ArrayList<>();
+        list9.add(7);
+        list9.add(18);
+        list9.add(9);
+        list9.add(10);
+        op.ExOptional1(list9, 0,2);
+
+
+        List<Integer> list10 = new ArrayList<>();
+        list10.add(7);
+        list10.add(18);
+        list10.add(9);
+        list10.add(10);
+        System.out.println(op.ExOptional2(list10));
+
+
+        List<Integer> list11 = new ArrayList<>();
+        list11.add(7);
+        list11.add(5);
+        list11.add(18);
+        list11.add(9);
+        list11.add(10);
+        list11.add(2);
+
+        System.out.println(op.ExOptional3(list11));
     }
 
 }

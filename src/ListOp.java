@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class ListOp {
@@ -48,8 +49,40 @@ public class ListOp {
         int max = 0;
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) >= max)
-              max = list.get(i);
+                max = list.get(i);
         }
         return max;
+    }
+
+    public void ExOptional1(List<Integer> list, int start, int to) {
+        System.out.println(list);
+        int temp = list.get(start);
+        list.set(start, list.get(to));
+        list.set(to, temp);
+        System.out.println(list);
+    }
+    public List<Integer> ExOptional2(List<Integer> list) {
+        List<Integer> pairs = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) % 2 == 0)
+               pairs.add(list.get(i));
+        }
+        return pairs;
+    }
+    public List<Integer>  ExOptional3(List<Integer> list) {
+        boolean sorted = false;
+        int temp;
+        while(!sorted) {
+            sorted = true;
+            for (int i = 0; i < list.size() - 1; i++) {
+                if (list.get(i) > list.get(i+1)) {
+                    temp = list.get(i);
+                    list.set(i, list.get(i+1));
+                    list.set(i+1, temp);
+                    sorted = false;
+                }
+            }
+        }
+        return list;
     }
 }
