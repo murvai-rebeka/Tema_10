@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Person {
+public abstract class Person {
     private String name;
     public String getName(){
         return name;
@@ -8,7 +8,5 @@ public class Person {
     public void setName(String name){
         this.name = name;
     }
-    public void talk(){
-        System.out.println("talk");
-    }
+    public abstract void talk();
 }

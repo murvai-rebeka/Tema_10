@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Animal {
+public abstract class Animal {
 
     private String breed;
     private byte age;
@@ -103,10 +103,7 @@ public class Animal {
         this.favActivities = favActivities;
     }
 
-    public void eat() {
-        System.out.println("Eating...");
-
-    }
+    public abstract void eat();
 
 
 }

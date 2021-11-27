@@ -2,7 +2,7 @@ package AnimalRescue;
 
 public class Main {
     public static void main(String args[]) {
-        Animal animal = new Animal();
+      /*  Animal animal = new Animal();
         animal.setBread("ghh");
         animal.setAge((byte) 2);
         animal.setWeight(9.0F);
@@ -21,7 +21,7 @@ public class Main {
                 + ", color: " + animal.getColor() + ", healt: " + animal.getHealthStatus() + ", hunger: "
                 + animal.getHungerLevel() + ", spirit: " + animal.getSpiritLevel() + ", favFood: " + animal.getFavFood()
                 + ", activities: " + animal.getFavActivities());
-
+*/
         Adopter adopter = new Adopter();
         adopter.setName("Rebeka");
         adopter.setMoney(50);
@@ -60,8 +60,8 @@ public class Main {
         dog.setName("Jackie");
         dog.bark();
 
-        Person person = new Person();
-        person.setName("Rebeka");
+       /* Person person = new Person();
+        person.setName("Rebeka");*/
 
 
     }

@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Food {
+public abstract class Food {
     private int price = 79;
     private int quantity = 10;
     private String availabilityInStock = "available";
@@ -27,7 +27,6 @@ public class Food {
     public void setAvailabilityInStock(String availabilityInStock) {
         this.availabilityInStock = availabilityInStock;
     }
-    public void heating(){
-        System.out.println("heating");
-    }
+
+    public abstract void heating();
 }
