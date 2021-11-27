@@ -10,5 +10,10 @@ public class Adopter extends Person{
     public void setMoney(int money){
         this.money = money;
     }
+
+    @Override
+    public void talk(){
+        System.out.println("The adopter talks");
+    }
 }
 

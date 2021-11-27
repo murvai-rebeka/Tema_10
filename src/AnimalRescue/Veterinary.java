@@ -12,4 +12,8 @@ public class Veterinary extends Person{
         this.specialization = specialization;
     }
 
+    @Override
+    public void talk(){
+        System.out.println("The veterinary talks");
+    }
 }

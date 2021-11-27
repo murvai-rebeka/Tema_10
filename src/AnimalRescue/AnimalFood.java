@@ -12,7 +12,10 @@ public class AnimalFood extends Food{
         this.dogFood = dogFood;
     }
 
-
+    @Override
+    public void heating(){
+        System.out.println("Stop heating animal food ");
+    }
 
 
 }

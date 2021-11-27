@@ -27,4 +27,7 @@ public class Food {
     public void setAvailabilityInStock(String availabilityInStock) {
         this.availabilityInStock = availabilityInStock;
     }
+    public void heating(){
+        System.out.println("heating");
+    }
 }
