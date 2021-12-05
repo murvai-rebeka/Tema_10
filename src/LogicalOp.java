@@ -423,15 +423,40 @@ public class LogicalOp {
         }
         return copyArray;
     }
-    public int arrayEx9(int[] array){
+
+    public int arrayEx9(int[] array) {
         Arrays.sort(array);
         return array[1];
     }
-    public int[] arrayEx10(int[] array, int[] empty){
-        for(int i = 0; i < array.length; i++ ){
+
+    public int[] arrayEx10(int[] array, int[] empty) {
+        for (int i = 0; i < array.length; i++) {
             empty[i] = array[i];
         }
         return empty;
+    }
+
+    public void try_catch_ex5(int[] array, int index) {
+        try {
+            System.out.println(array[index]);
+        } catch (IndexOutOfBoundsException ex) {
+            System.out.println("Inside catch, number too large");
+        } catch (Exception ex) {
+            System.out.println("Unhandled exception");
+        }
+    }
+
+    public void wait(int seconds) {
+        System.out.print("Sleeping for: ");
+        do {
+            System.out.println(seconds);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            seconds--;
+        } while (seconds > 0);
     }
 
 }
